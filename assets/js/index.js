@@ -45,7 +45,10 @@ function init(){
         sourceType : 'webcam',
     });
 
-  
+    arContext = new THREEx.ArToolkitContext({
+        cameraParametersUrl: './assets/camera_para.dat',
+        detectionMode: 'mono',
+    });
 
     arMarker[0] = new THREEx.ArMarkerControls(arContext, camera, {
         type : 'pattern',
