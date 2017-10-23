@@ -1,1 +1,0 @@
-<?php echo base64_encode('assets/img/pattern.jpg'); ?>
