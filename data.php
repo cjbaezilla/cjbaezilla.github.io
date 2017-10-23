@@ -7,7 +7,7 @@ $data = 'some long string of hex';
 // tried echoing it directly..
 //echo file_get_contents('assets/img/patronn.jpg');
 
-echo img2hex('assets/img/patronn.jpg');
+echo file_get_contents('assets/img/patronn.jpg');
 
 
 
@@ -15,7 +15,7 @@ echo img2hex('assets/img/patronn.jpg');
 
  function img2hex($image) {  
  	$hex = '';
- 	
+
    if ($fp = fopen($image, 'r')) {  
        $data = fread($fp, filesize($image));  
        fclose($fp);  
